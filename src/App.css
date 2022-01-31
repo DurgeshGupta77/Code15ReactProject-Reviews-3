@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body-component {
+    display: grid;
+    place-items: center;
+    margin-bottom: 50px;
+    margin-top: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.body-component h1 {
+    font-size: 64px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.body-component .underline {
+    width: 10%;
+    height: 5px;
+    background-color: royalblue;
+    border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.user-reviews {
+    display: grid;
+    place-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user-reviews .container {
+    width: 50%;
+    background-color: whitesmoke;
+    padding: 30px;
+}
+
+.user-reviews .container .image-container {
+    /* height: 200px; */
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.user-reviews .container .image-container .quote-box {
+    background-color: cornflowerblue;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    display: grid;
+    place-items: center;
+    /* transform: translate(-100%, 10%); */
+    transform: translate(-210%, 30%);
+    /* left: 43%; */
+    /* top */
+}
+
+.user-reviews .container .image-container .quote-box .quote {
+    color: white;
+}
+
+.user-reviews .container .image-container img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-reviews .container .name-box {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 2px;
+    text-transform: capitalize;
+}
+
+.user-reviews .container .job-box {
+    text-align: center;
+    color: cornflowerblue;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.user-reviews .container .text-box {
+    text-align: center;
+}
+
+.user-reviews .container .toggle-btn-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.user-reviews .container .toggle-btn-group .toggle-left-btn, .user-reviews .container .toggle-btn-group .toggle-right-btn {
+    font-size: 32px;
+    border: none;
+    background-color: whitesmoke;
+    color: cornflowerblue;
+    cursor: pointer;
+}
+
+.user-reviews .container .random-btn-grp {
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+}
+
+.user-reviews .container .random-btn-grp .random-btn {
+    padding: 10px;
+    /* width: 20px; */
+    background-color: cornflowerblue;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
 }
